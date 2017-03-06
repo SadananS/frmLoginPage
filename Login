@@ -1,0 +1,56 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login1.aspx.cs" Inherits="PAYSLIP.Login1" %>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Material Design Login Form</title>
+  
+  
+  
+<%--      <link rel="stylesheet" href="css/style.css">--%>
+<link href="Content/login1.css" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <hgroup>
+  <h1>PaySlip Generation</h1>
+  <h3>By UNIKUL Solutions </h3>
+</hgroup>
+    <form id="form1" runat="server">
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>UserID</label>
+  </div>
+  <div class="group">
+    <input type="Password"><span class="highlight"></span><span class="bar"></span>
+    <label>Password</label>
+  </div>
+  <button type="button"  class="button buttonBlue"     runat ="server" >LOGIN
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+  </button>
+        
+     
+        
+  <asp:LinkButton ID="btnforgot" runat="server" OnClick="btnforgot_Click">Forgot  Password</asp:LinkButton>
+       
+            
+ <%--     <asp:button  id="btnLogSubmit" 
+          onclick="btnLogSubmit_Click" runat="server" text="Submit" Height="52px" Width="339px">
+                            </asp:button>   --%>
+       
+            
+    </form>
+<footer>
+<img src="Images/unikul.png" />
+    
+ <p> </p>
+</footer>
+
+
+<script src="Scripts/login1.js"></script>
+<script src="Scripts/Login1Design.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
